@@ -101,6 +101,13 @@ public class Security {
 
 		HttpsURLConnection.setDefaultHostnameVerifier(allHostsValid);
 	}
+	
+	/***
+	 *  Copy of uniqid in php http://php.net/manual/fr/function.uniqid.php
+	 * @param prefix
+	 * @param more_entropy
+	 * @return
+	 */
 	public String uniqid(String prefix,boolean more_entropy)
 	{
 		long time = System.currentTimeMillis();
